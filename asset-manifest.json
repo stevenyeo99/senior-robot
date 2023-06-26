@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/senior-robot/static/css/main.e47551f1.css",
+    "main.css": "/senior-robot/static/css/main.fba8c5a7.css",
     "main.js": "/senior-robot/static/js/main.532776e8.js",
     "service-worker.js": "/senior-robot/service-worker.js",
     "static/media/SEGA.woff": "/senior-robot/static/media/SEGA.47b4bfa94ef243af4a5b.woff",
     "index.html": "/senior-robot/index.html",
-    "main.e47551f1.css.map": "/senior-robot/static/css/main.e47551f1.css.map",
+    "main.fba8c5a7.css.map": "/senior-robot/static/css/main.fba8c5a7.css.map",
     "main.532776e8.js.map": "/senior-robot/static/js/main.532776e8.js.map"
   },
   "entrypoints": [
-    "static/css/main.e47551f1.css",
+    "static/css/main.fba8c5a7.css",
     "static/js/main.532776e8.js"
   ]
 }
