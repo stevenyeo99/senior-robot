@@ -8,6 +8,8 @@ import thunkMiddleware from 'redux-thunk';
 
 import App from './containers/App';
 
+import * as serviceWorker from './serviceWorkerRegistration';
+
 import { robotReducers, fetchRobotReducers } from './reducers';
 
 import './index.css';
@@ -22,3 +24,5 @@ root.render(
     <App />
   </Provider>
 );
+
+serviceWorker.register();
