@@ -1,4 +1,5 @@
 const SearchBox = ({searchValue, searchHandler}) => {
+    console.log('SearchBox');
     return (
         <div className='pa2'>
             <input

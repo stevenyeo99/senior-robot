@@ -1,7 +1,7 @@
 import Card from "./Card";
 
 const CardList = (props) => {
-
+    console.log('CardList');
     const { items } = props;
 
     return (

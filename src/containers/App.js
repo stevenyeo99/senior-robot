@@ -5,6 +5,7 @@ import SearchBox from "../components/SearchBox";
 import CardList from "../components/CardList";
 import Scroll from '../components/Scroll';
 import ErrorBoundry from '../components/ErrorBoundry';
+import Header from '../components/Header';
 
 import { setSearchField, fetchRobots } from '../actions';
 
@@ -34,7 +35,6 @@ const App = (props) => {
 
     useEffect(() => {
         setRobots();
-        console.log('Effect');
     }, [setRobots]);
 
     const filteredRobots = robots.filter(robot => {
@@ -46,7 +46,7 @@ const App = (props) => {
         :
         (
             <div className='tc'>
-                <h1 className='f1'>RoboFriends</h1>
+                <Header />
                 <SearchBox searchValue={searchValue} searchHandler={setSearchValue} />
                 <Scroll>
                     <ErrorBoundry>
