@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test filtered robots 1`] = `
+<MainPage
+  isPending={false}
+  robots={
+    Array [
+      Object {
+        "email": "yeomandeveloper@gmail.com",
+        "id": 1,
+        "name": "steven",
+      },
+    ]
+  }
+  searchValue="a"
+  setRobots={
+    [MockFunction] {
+      "calls": Array [
+        Array [],
+      ],
+      "results": Array [
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+      ],
+    }
+  }
+  setSearchValue={[MockFunction]}
+>
+  <div
+    className="tc"
+  >
+    <Header>
+      <div>
+        <h1
+          className="f1"
+        >
+          RoboFriends
+        </h1>
+        <CounterButton
+          color="red"
+        >
+          <button
+            color="red"
+            id="button"
+            onClick={[Function]}
+          >
+            Count: 
+            0
+          </button>
+        </CounterButton>
+      </div>
+    </Header>
+    <SearchBox
+      searchHandler={[MockFunction]}
+      searchValue="a"
+    >
+      <div
+        className="pa2"
+      >
+        <input
+          className="pa3 ba b--green bg-lightest-blue"
+          onChange={[MockFunction]}
+          placeholder="search robots"
+          type="search"
+          value="a"
+        />
+      </div>
+    </SearchBox>
+    <Scroll>
+      <div
+        style={
+          Object {
+            "border": "5px solid black",
+            "height": "800px",
+            "overflowY": "scroll",
+          }
+        }
+      >
+        <ErrorBoundry>
+          <div>
+            <CardList
+              items={Array []}
+            >
+              <div />
+            </CardList>
+          </div>
+        </ErrorBoundry>
+      </div>
+    </Scroll>
+  </div>
+</MainPage>
+`;
+
+exports[`test main wrapper is succesfull rendering or not. 1`] = `
+<div
+  className="tc"
+>
+  <Header />
+  <SearchBox
+    searchHandler={[MockFunction]}
+    searchValue=""
+  />
+  <Scroll>
+    <ErrorBoundry>
+      <CardList
+        items={Array []}
+      />
+    </ErrorBoundry>
+  </Scroll>
+</div>
+`;

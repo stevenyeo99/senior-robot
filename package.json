@@ -3,10 +3,17 @@
   "homepage": "https://stevenyeo99.github.io/senior-robot",
   "version": "0.1.0",
   "private": true,
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "enzyme": "^3.11.0",
+    "enzyme-to-json": "^3.6.2",
     "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -36,7 +43,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "jest-clear": "jest --clearCache && jest -u"
   },
   "eslintConfig": {
     "extends": [
@@ -55,5 +63,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@cfaester/enzyme-adapter-react-18": "^0.7.0"
   }
 }

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test counter button component 1`] = `
+<button
+  color="red"
+  id="button"
+  onClick={[Function]}
+>
+  Count: 
+  0
+</button>
+`;
